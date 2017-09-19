@@ -5,6 +5,7 @@ import Signup from '@/views/Signup';
 import PasswordReset from '@/views/Password-Reset';
 import NotFound from '@/views/Not-Found';
 import Dashboard from '@/views/Dashboard';
+import Admin from '@/views/Admin';
 import Buckets from '@/views/Buckets';
 import BucketList from '@/views/Buckets/Bucket-List';
 import CreateBucket from '@/views/Buckets/Create-Bucket';
@@ -37,6 +38,14 @@ const router = new Router({
       path: '/password-reset',
       name: 'Password-Reset',
       component: PasswordReset
+    },
+    {
+      path: '/admin',
+      name: 'Admin',
+      component: Admin,
+      meta: {
+        requiresAuth: true
+      }
     },
     /* Dashboard - requires authenticated user */
     {
