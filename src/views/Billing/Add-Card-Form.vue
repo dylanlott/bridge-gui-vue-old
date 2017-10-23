@@ -3,7 +3,10 @@
     <div class="row">
       <div class="col">
         <h2 class="title float-left">Add Credit Card</h2>
-        <Sj-Crypto-Payment-Btn class="float-right"></Sj-Crypto-Payment-Btn>
+
+        <span class="float-right">
+          <Sj-Crypto-Payment-Btn></Sj-Crypto-Payment-Btn>
+        </span>
       </div>
     </div>
 
